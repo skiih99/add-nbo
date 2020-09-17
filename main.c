@@ -19,8 +19,8 @@ int main(int argc, char* argv[]){
 		return -1;
 	}
 	
-	fread(&a, 4, 1, fp1);
-	fread(&b, 4, 1, fp2);
+	fread(&a, 1, 4, fp1);
+	fread(&b, 1, 4, fp2);
 
 	add_nbo(a, b);
 
